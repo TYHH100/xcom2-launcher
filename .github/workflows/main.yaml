@@ -1,0 +1,48 @@
+name: XCOM2 Launcher MSBuild
+
+on:
+  push:
+    branches: [ "actions-test" ]
+  release:
+    types: [published]
+
+jobs:
+  build:
+    runs-on: windows-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v5
+
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v2
+
+    - name: Restore NuGet packages
+      run: msbuild xcom2-launcher.csproj /t:Restore /p:Configuration=Release
+
+    - name: Build application (not publish)
+      run: |
+        msbuild xcom2-launcher.csproj `
+          /t:Build `
+          /p:Configuration=Release `
+          /p:Platform=AnyCPU `
+          /p:OutputPath=bin\Release
+
+    - name: Copy necessary files to output directory
+      run: |
+        New-Item -ItemType Directory -Path "AML-Complete" | Out-Null
+        
+        Copy-Item -Path "bin\Release\*.exe" -Destination "AML-Complete\" -Force
+        Copy-Item -Path "bin\Release\*.dll" -Destination "AML-Complete\" -Force
+        Copy-Item -Path "bin\Release\*.config" -Destination "AML-Complete\" -Force
+        Copy-Item -Path "bin\Release\*.pdb" -Destination "AML-Complete\" -Force
+
+    - name: Create distribution package
+      run: |
+        Compress-Archive -Path "AML-Complete\*" -DestinationPath "XCOM2_AlternativeModLauncher.zip"
+
+    - name: Upload artifact
+      uses: actions/upload-artifact@v5
+      with:
+        name: xcom2-launcher-clean
+        path: XCOM2_AlternativeModLauncher.zip
