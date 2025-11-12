@@ -21,8 +21,8 @@ jobs:
     - name: Setup MSBuild
       uses: microsoft/setup-msbuild@v2
 
-    - name: Restore NuGet packages
-      run: msbuild $env:Solution_Name /t:Restore /p:Configuration=Release
+    #- name: Restore NuGet packages
+    #  run: msbuild $env:Solution_Name /t:Restore /p:Configuration=Release
 
     - name: Build application
       run: |
