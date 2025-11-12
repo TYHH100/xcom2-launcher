@@ -91,7 +91,7 @@
 			this.groupBox1.Size = new System.Drawing.Size(655, 200);
 			this.groupBox1.TabIndex = 9;
 			this.groupBox1.TabStop = false;
-			this.groupBox1.Text = "Game options";
+			this.groupBox1.Text = "游戏选项";
 			// 
 			// tableLayoutPanel2
 			// 
@@ -182,7 +182,7 @@
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(56, 13);
 			this.label3.TabIndex = 0;
-			this.label3.Text = "Base Path";
+			this.label3.Text = "游戏路径";
 			// 
 			// label4
 			// 
@@ -192,7 +192,7 @@
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(81, 13);
 			this.label4.TabIndex = 2;
-			this.label4.Text = "Mod Directories";
+			this.label4.Text = "模组目录";
 			// 
 			// gamePathTextBox
 			// 
@@ -219,7 +219,7 @@
 			this.addModPathButton.Name = "addModPathButton";
 			this.addModPathButton.Size = new System.Drawing.Size(67, 24);
 			this.addModPathButton.TabIndex = 6;
-			this.addModPathButton.Text = "Add";
+			this.addModPathButton.Text = "添加";
 			this.addModPathButton.UseVisualStyleBackColor = true;
 			this.addModPathButton.Click += new System.EventHandler(this.AddModPathButtonOnClick);
 			// 
@@ -229,7 +229,7 @@
 			this.removeModPathButton.Name = "removeModPathButton";
 			this.removeModPathButton.Size = new System.Drawing.Size(67, 24);
 			this.removeModPathButton.TabIndex = 8;
-			this.removeModPathButton.Text = "Remove";
+			this.removeModPathButton.Text = "移除";
 			this.removeModPathButton.UseVisualStyleBackColor = true;
 			this.removeModPathButton.Click += new System.EventHandler(this.RemoveModPathButtonOnClick);
 			// 
@@ -239,7 +239,7 @@
 			this.browseGamePathButton.Name = "browseGamePathButton";
 			this.browseGamePathButton.Size = new System.Drawing.Size(67, 24);
 			this.browseGamePathButton.TabIndex = 14;
-			this.browseGamePathButton.Text = "Browse";
+			this.browseGamePathButton.Text = "浏览";
 			this.browseGamePathButton.UseVisualStyleBackColor = true;
 			this.browseGamePathButton.Click += new System.EventHandler(this.BrowseGamePathButtonOnClick);
 			// 
@@ -588,7 +588,7 @@
 			this.Name = "SettingsDialog";
 			this.ShowInTaskbar = false;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-			this.Text = "Settings";
+			this.Text = "设置";
 			this.Shown += new System.EventHandler(this.SettingsDialog_Shown);
 			this.groupBox1.ResumeLayout(false);
 			this.tableLayoutPanel2.ResumeLayout(false);

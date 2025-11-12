@@ -460,18 +460,18 @@ namespace XCOM2Launcher
                     
                     if (newMissingMods.Count == 1)
                     {
-                        message = $"The mod '{newMissingMods.FirstOrDefault()?.Name}' no longer exists.\n\nDo you want to hide this mod from the mod list?";
+                        message = $"模组 '{newMissingMods.FirstOrDefault()?.Name}' 不存在.\n\n是否需要在模组列表中隐藏?";
                     }
                     else
                     {
                         const int displayLimit = 10;
-                        message = $"{newMissingMods.Count} mods no longer exist:\n\n- "
+                        message = $"{newMissingMods.Count} 个模组不存在,模组名字如下:\n\n- "
                                   + string.Join("\n- ", newMissingMods.Take(displayLimit))
                                   + (newMissingMods.Count > displayLimit ? "\n..." : "")
-                                  + "\n\nDo you want to hide these mods from the mod list?";
+                                  + "\n\n是否需要在列表中隐藏这些模组?";
                     }
 
-                    var result = MessageBox.Show(message, "Missing mods", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
+                    var result = MessageBox.Show(message, "缺少模组", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
 
                     if (result == DialogResult.Yes)
                     {

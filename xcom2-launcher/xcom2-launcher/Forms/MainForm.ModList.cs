@@ -121,10 +121,10 @@ namespace XCOM2Launcher.Forms
                 );
             columns.Single(c => c.AspectName == "isHidden").MakeGroupies(
                 new [] {false, true},
-                new [] { "wut?", "Not Hidden", "Hidden"});
+                new [] { "wut?", "未隐藏", "隐藏" });
             columns.Single(c => c.AspectName == "isActive").MakeGroupies(
                 new[] { false, true },
-                new[] { "wut?", "Disabled", "Enabled" });
+                new[] { "wut?", "禁用", "启用" });
 
             olvcActive.AspectToStringConverter = active => "";
             olvcActive.GroupFormatter = (g, param) => { param.GroupComparer = Comparer<OLVGroup>.Create((a, b) => (param.GroupByOrder == SortOrder.Descending ? 1 : -1) * a.Header.CompareTo(b.Header)); };
@@ -227,34 +227,34 @@ namespace XCOM2Launcher.Forms
             var mod = (ModEntry) rowobject;
 
             if (mod.State.HasFlag(ModState.Downloading))
-                return "Downloading";
+                return "下载中";
 
             if (mod.State.HasFlag(ModState.NotInstalled))
-                return "Not installed";
+                return "未安装";
 
             if (mod.State.HasFlag(ModState.NotLoaded))
-                return "Not loaded";
+                return "未加载";
 
             if (mod.State.HasFlag(ModState.MissingDependencies) && mod.isActive)
-                return "Missing dep";
+                return "缺少依赖";
 
             if (mod.State.HasFlag(ModState.ModConflict))
-                return "Conflict";
+                return "冲突";
 
             if (mod.State.HasFlag(ModState.DuplicateID))
-                return "Duplicate ID";
+                return "重复 ID";
 
             if (mod.State.HasFlag(ModState.New))
-                return "New";
+                return "全新";
 
             if (mod.State.HasFlag(ModState.UpdateAvailable))
-                return "Update available";
+                return "有可用更新";
 
             if (mod.State.HasFlag(ModState.DuplicateDisabled))
-                return "Duplicate (disabled)";
+                return "重复(已禁用)";
 
             if (mod.State.HasFlag(ModState.DuplicatePrimary))
-                return "Duplicate (primary)";
+                return "重复(主要)";
 
             return "OK";
         }
@@ -777,9 +777,9 @@ namespace XCOM2Launcher.Forms
                 return menu;
             
             // change color
-            var changeColorItem = new ToolStripMenuItem("Change color");
+            var changeColorItem = new ToolStripMenuItem("更改颜色");
 
-            var editColor = new ToolStripMenuItem("Edit");
+            var editColor = new ToolStripMenuItem("编辑");
 
             editColor.Click += (sender, e) =>
             {
@@ -809,7 +809,7 @@ namespace XCOM2Launcher.Forms
 
             changeColorItem.DropDownItems.Add(changeShadeItem);
 
-            var randomColorItem = new ToolStripMenuItem("Random color");
+            var randomColorItem = new ToolStripMenuItem("随机颜色");
 
             randomColorItem.Click += (sender, e) => tag.Color = ModTag.RandomColor();
 
@@ -882,16 +882,16 @@ namespace XCOM2Launcher.Forms
             ToolStripMenuItem restoreDuplicates = null;
             ToolStripMenuItem resubscribeItem = null;
             ToolStripMenuItem unsubscribeItem = null;
-            ToolStripMenuItem copyToClipboard = new ToolStripMenuItem("Copy to clipboard");
+            ToolStripMenuItem copyToClipboard = new ToolStripMenuItem("复制到剪贴板");
 
-            copyToClipboard.DropDownItems.Add("Name", null, delegate
+            copyToClipboard.DropDownItems.Add("模组名", null, delegate
             {
                 StringBuilder sb = new StringBuilder();
                 selectedMods.Aggregate(sb, (result, item) => sb.Append(item.Name + Environment.NewLine));
                 Clipboard.SetText(sb.ToString().TrimEnd(Environment.NewLine.ToCharArray()));
             });
 
-            copyToClipboard.DropDownItems.Add("Path", null, delegate
+            copyToClipboard.DropDownItems.Add("文件路径", null, delegate
             {
                 StringBuilder sb = new StringBuilder();
                 selectedMods.Aggregate(sb, (result, item) => sb.Append(item.Path + Environment.NewLine));
@@ -909,7 +909,7 @@ namespace XCOM2Launcher.Forms
                 Clipboard.SetText(sb.ToString().TrimEnd(Environment.NewLine.ToCharArray()));
             });
         
-            copyToClipboard.DropDownItems.Add("Browser URL", null, delegate
+            copyToClipboard.DropDownItems.Add("浏览器 URL", null, delegate
             {
                 StringBuilder sb = new StringBuilder();
                 selectedMods.ForEach(mod =>
@@ -923,18 +923,18 @@ namespace XCOM2Launcher.Forms
             // create items that appear only when a single mod is selected
             if (selectedMods.Count == 1)
             {
-                renameItem = new ToolStripMenuItem("Rename");
+                renameItem = new ToolStripMenuItem("重命名");
                 renameItem.Click += (a, b) => { modlist_ListObjectListView.EditSubItem(currentItem, olvcName.Index); };
 
                 if (!m.State.HasFlag(ModState.NotInstalled))
                 {
-                    showInExplorerItem = new ToolStripMenuItem("Show in Explorer", null, delegate { m.ShowInExplorer(); });
+                    showInExplorerItem = new ToolStripMenuItem("用资源管理器打开文件所在位置", null, delegate { m.ShowInExplorer(); });
                 }
 
                 if (m.WorkshopID > 0)
                 {
-                    showOnSteamItem = new ToolStripMenuItem("Show on Steam", null, delegate { m.ShowOnSteam(); });
-                    showInBrowser = new ToolStripMenuItem("Show in Browser", null, delegate { m.ShowInBrowser(); });
+                    showOnSteamItem = new ToolStripMenuItem("使用Steam打开此模组创意工坊页面", null, delegate { m.ShowOnSteam(); });
+                    showInBrowser = new ToolStripMenuItem("使用浏览器打开此模组创意工坊页面", null, delegate { m.ShowInBrowser(); });
                 }
 
                 var duplicateMods = Mods.All.Where(mod => mod.ID == m.ID && mod != m).ToList();
@@ -996,7 +996,7 @@ namespace XCOM2Launcher.Forms
                 }
             }
 
-            var addTagItem = new ToolStripMenuItem("Add tag(s)...");
+            var addTagItem = new ToolStripMenuItem("添加标签...");
             addTagItem.Click += (sender, args) =>
             {
                 var newTag = Interaction.InputBox($"Please specify one or more tags (separated by a semicolon) that should be added to {selectedMods.Count} selected mod(s).", "Add tag(s)");
@@ -1016,11 +1016,11 @@ namespace XCOM2Launcher.Forms
             };
 
             // Move to ...
-            var moveToCategoryItem = new ToolStripMenuItem("Move to category");
+            var moveToCategoryItem = new ToolStripMenuItem("移动到分组");
             // ... new category
-            moveToCategoryItem.DropDownItems.Add("New category", null, delegate
+            moveToCategoryItem.DropDownItems.Add("新建分组", null, delegate
             {
-                var category = Interaction.InputBox("Please enter the name of the new category", "Create category", "New category");
+                var category = Interaction.InputBox("请输入新分组的名称", "创建分组", "新建分组");
 
                 if (string.IsNullOrEmpty(category))
                     return;
@@ -1040,7 +1040,7 @@ namespace XCOM2Launcher.Forms
             }
 
             // Hide/unhide
-            var toggleVisibility = new ToolStripMenuItem {Text = m.isHidden ? "Unhide" : "Hide"};
+            var toggleVisibility = new ToolStripMenuItem {Text = m.isHidden ? "取消隐藏" : "隐藏" };
             toggleVisibility.Click += delegate
             {
                 // save as new list so we can remove mods if they are being hidden
@@ -1062,7 +1062,7 @@ namespace XCOM2Launcher.Forms
             };
 
             // Update mods
-            var updateItem = new ToolStripMenuItem("Update", null, delegate
+            var updateItem = new ToolStripMenuItem("更新", null, delegate
             {
                 if (IsModUpdateTaskRunning)
                 {
@@ -1077,7 +1077,7 @@ namespace XCOM2Launcher.Forms
             {
                 List<ModEntry> modsToUpdate = new List<ModEntry>(selectedMods.Where(mod => mod.WorkshopID > 0));
 
-                fetchWorkshopTagsItem = new ToolStripMenuItem("Use workshop tags");
+                fetchWorkshopTagsItem = new ToolStripMenuItem("使用创意工坊标签");
                 fetchWorkshopTagsItem.Click += delegate
                 {
                     if (modsToUpdate.Count > 1)
@@ -1115,14 +1115,14 @@ namespace XCOM2Launcher.Forms
                 var nonInstalledWorkShopMods = workShopMods.Where(mod => mod.State.HasFlag(ModState.NotInstalled)).ToList();
                 if (nonInstalledWorkShopMods.Any())
                 {
-                    resubscribeItem = new ToolStripMenuItem("Resubscribe", null, delegate { ResubscribeToMods(nonInstalledWorkShopMods); });
+                    resubscribeItem = new ToolStripMenuItem("重新订阅", null, delegate { ResubscribeToMods(nonInstalledWorkShopMods); });
                     resubscribeItem.ToolTipText = "Re-subscribes to the selected the mod(s) in the Workshop and starts downloading.";
                 }
 
                 var installedWorkShopMods = workShopMods.Where(mod => !mod.State.HasFlag(ModState.NotInstalled)).ToList();
                 if (installedWorkShopMods.Any())
                 {
-                    unsubscribeItem = new ToolStripMenuItem("Unsubscribe", null, delegate { ConfirmUnsubscribeMods(installedWorkShopMods); });
+                    unsubscribeItem = new ToolStripMenuItem("取消订阅", null, delegate { ConfirmUnsubscribeMods(installedWorkShopMods); });
                     unsubscribeItem.ToolTipText = "Unsubscribes the selected mod(s) from the Workshop, but keeps the mod(s) listed in AML, so you can re-subscribe later.";
                 }
             }
@@ -1130,7 +1130,7 @@ namespace XCOM2Launcher.Forms
             var modsNotActive = selectedMods.Where(mod => !mod.isActive).ToList();
             if (modsNotActive.Any())
             {
-                enableAllItem = new ToolStripMenuItem("Enable");
+                enableAllItem = new ToolStripMenuItem("启用");
                 enableAllItem.Click += delegate
                 {
                     // If mods get enabled with UpdateModsOnStartup disabled or OnlyUpdateEnabledOrNewModsOnStartup active, we perform an update because mod data could be outdated.
@@ -1175,7 +1175,7 @@ namespace XCOM2Launcher.Forms
             var modsActive = selectedMods.Where(mod => mod.isActive).ToList();
             if (modsActive.Any())
             {
-                disableAllItem = new ToolStripMenuItem("Disable");
+                disableAllItem = new ToolStripMenuItem("禁用");
                 disableAllItem.Click += delegate
                 {
                     Cursor.Current = Cursors.WaitCursor;
@@ -1188,7 +1188,7 @@ namespace XCOM2Launcher.Forms
                 };
             }
 
-            var deleteItem = new ToolStripMenuItem("Delete", null, delegate { ConfirmDeleteMods(selectedMods); });
+            var deleteItem = new ToolStripMenuItem("删除", null, delegate { ConfirmDeleteMods(selectedMods); });
             deleteItem.ToolTipText = "Unsubscribes the selected mod(s) from the Workshop, deletes the mod folder(s) and removes the mod(s) from AML.";
 
             // create menu structure

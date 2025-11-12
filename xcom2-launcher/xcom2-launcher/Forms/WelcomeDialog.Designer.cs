@@ -53,7 +53,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(481, 20);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Please help us to improve AML, by enabling anonymous error reporting!";
+            this.label1.Text = "帮助我们改进AML, 启用匿名错误报告";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox1
@@ -87,7 +87,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(541, 20);
             this.label2.TabIndex = 3;
-            this.label2.Text = "You are seeing this dialog, because you are starting AML for the first time.";
+            this.label2.Text = "您看到该窗口,因为您是第一次使用AML.";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
@@ -99,7 +99,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(541, 20);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Welcome to the Alternative Mod Launcher!";
+            this.label3.Text = "欢迎使用Alternative Mod Launcher!";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // rSentryEnabled
@@ -115,7 +115,7 @@
             this.rSentryEnabled.Size = new System.Drawing.Size(104, 24);
             this.rSentryEnabled.TabIndex = 6;
             this.rSentryEnabled.TabStop = true;
-            this.rSentryEnabled.Text = "ENABLED";
+            this.rSentryEnabled.Text = "启用";
             this.rSentryEnabled.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.rSentryEnabled.UseVisualStyleBackColor = true;
             // 
@@ -129,7 +129,7 @@
             this.rSentryDisabled.Name = "rSentryDisabled";
             this.rSentryDisabled.Size = new System.Drawing.Size(104, 24);
             this.rSentryDisabled.TabIndex = 7;
-            this.rSentryDisabled.Text = "DISABLED";
+            this.rSentryDisabled.Text = "禁用";
             this.rSentryDisabled.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.rSentryDisabled.UseVisualStyleBackColor = true;
             // 
@@ -141,7 +141,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(525, 21);
             this.label5.TabIndex = 9;
-            this.label5.Text = "You can enable/disable this feature at any time from the Settings dialog.";
+            this.label5.Text = "您可以随时在\"设置\"窗口中启用和禁用该功能.";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel1
@@ -219,7 +219,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(481, 20);
             this.label4.TabIndex = 10;
-            this.label4.Text = "Select the game you want to use this copy of AML for!";
+            this.label4.Text = "请选择想要使用AML的游戏!";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // WelcomeDialog
@@ -240,7 +240,7 @@
             this.MinimizeBox = false;
             this.Name = "WelcomeDialog";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Welcome to AML";
+            this.Text = "欢迎使用AML";
             this.Load += new System.EventHandler(this.WelcomeDialog_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.WelcomeDialog_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

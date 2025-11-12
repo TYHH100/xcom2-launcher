@@ -15,7 +15,7 @@ namespace XCOM2Launcher.Mod
         }
 
         private static readonly log4net.ILog Log = log4net.LogManager.GetLogger(nameof(ModInfo));
-        public const string DEFAULT_CATEGORY_NAME = "Unsorted";
+        public const string DEFAULT_CATEGORY_NAME = "未分组";
 
         public long PublishedFileID { get; set; } = -1;
         public string Title { get; set; }

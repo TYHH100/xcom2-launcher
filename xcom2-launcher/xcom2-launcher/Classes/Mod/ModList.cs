@@ -361,7 +361,7 @@ namespace XCOM2Launcher.Mod
                             }
 
                             var incremented = Interlocked.Increment(ref steamProgress);
-                            progress?.Report(new ModUpdateProgress($"Updating mods {incremented}/{totalModCount}...", incremented, totalModCount));
+                            progress?.Report(new ModUpdateProgress($"更新模组 {incremented}/{totalModCount}...", incremented, totalModCount));
                                 
                             try
                             {
@@ -397,7 +397,7 @@ namespace XCOM2Launcher.Mod
                     cancelToken.ThrowIfCancellationRequested();
                 }
 
-                progress?.Report(new ModUpdateProgress($"Updating mods {totalProgress}/{totalModCount}...", totalProgress, totalModCount));
+                progress?.Report(new ModUpdateProgress($"更新模组 {totalProgress}/{totalModCount}...", totalProgress, totalModCount));
                 totalProgress++;
                 
                 await UpdateLocalModAsync(localMod);

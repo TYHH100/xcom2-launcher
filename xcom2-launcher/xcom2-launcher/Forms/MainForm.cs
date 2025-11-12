@@ -231,7 +231,7 @@ namespace XCOM2Launcher.Forms
             }
 
             progress_toolstrip_progressbar.Visible = false;
-            status_toolstrip_label.Text = "Ready.";
+            status_toolstrip_label.Text = "就绪";
             main_statusstrip.Update();
         }
 
@@ -245,7 +245,7 @@ namespace XCOM2Launcher.Forms
 
             if (!Mods.Active.Any())
             {
-                export_richtextbox.Text = "No active mods.";
+                export_richtextbox.Text = "没有启用模组.";
                 return;
             }
 			
@@ -465,8 +465,8 @@ namespace XCOM2Launcher.Forms
         {
             //
             var hasConflicts = NumConflicts > 0;
-            modlist_tab.Text = $"Mods ({Mods.Active.Count()} / {Mods.All.Count()})";
-            conflicts_tab.Text = "Overrides" + (hasConflicts ? $" ({NumConflicts} Conflicts)" : "");
+            modlist_tab.Text = $"模组 ({Mods.Active.Count()} / {Mods.All.Count()})";
+            conflicts_tab.Text = "覆盖" + (hasConflicts ? $" ({NumConflicts} 冲突)" : "");
             conflicts_tab.ImageKey = hasConflicts ? ExclamationIconKey : null;
         }
 
@@ -476,13 +476,13 @@ namespace XCOM2Launcher.Forms
         private void UpdateStateFilterLabels()
         {
             var allMods = Mods.All.ToList();
-            cFilterConflicted.Text = $"Conflicts ({allMods.Count(m => m.State.HasFlag(ModState.ModConflict))})";
-            cFilterDuplicate.Text = $"Duplicates ({allMods.Count(m => m.State.HasFlag(ModState.DuplicateID))})";
-            cFilterNew.Text = $"New ({allMods.Count(m => m.State.HasFlag(ModState.New))})";
-            cFilterNotInstalled.Text = $"Not installed ({allMods.Count(m => m.State.HasFlag(ModState.NotInstalled))})";
-            cFilterNotLoaded.Text = $"Not loaded ({allMods.Count(m => m.State.HasFlag(ModState.NotLoaded))})";
-            cFilterMissingDependency.Text = $"Missing dependencies ({allMods.Count(m => m.isActive && m.State.HasFlag(ModState.MissingDependencies))})";
-            cFilterHidden.Text = $"Hidden ({allMods.Count(m => m.isHidden)})";
+            cFilterConflicted.Text = $"冲突 ({allMods.Count(m => m.State.HasFlag(ModState.ModConflict))})";
+            cFilterDuplicate.Text = $"重复 ({allMods.Count(m => m.State.HasFlag(ModState.DuplicateID))})";
+            cFilterNew.Text = $"全新 ({allMods.Count(m => m.State.HasFlag(ModState.New))})";
+            cFilterNotInstalled.Text = $"未安装 ({allMods.Count(m => m.State.HasFlag(ModState.NotInstalled))})";
+            cFilterNotLoaded.Text = $"未加载 ({allMods.Count(m => m.State.HasFlag(ModState.NotLoaded))})";
+            cFilterMissingDependency.Text = $"缺少依赖项 ({allMods.Count(m => m.isActive && m.State.HasFlag(ModState.MissingDependencies))})";
+            cFilterHidden.Text = $"隐藏 ({allMods.Count(m => m.isHidden)})";
         }
 
         public int NumConflicts;
@@ -581,7 +581,7 @@ namespace XCOM2Launcher.Forms
 
             if (duplicates.Any())
             {
-                str.AppendLine("Mods with identical package ids found!");
+                str.AppendLine("发现有相同软件包ID的模组!");
                 if (Settings.EnableDuplicateModIdWorkaround)
                 {
                     str.AppendLine("You can set a preferred duplicate from the mod list context menu to resolve this.");
@@ -694,7 +694,7 @@ namespace XCOM2Launcher.Forms
         {
             if (m == null)
             {
-                modinfo_info_TitleTextBox.Text = "No mod or multiple mods selected";
+                modinfo_info_TitleTextBox.Text = "未选择任何模组或多选模组";
                 modinfo_info_AuthorTextBox.Clear();
                 modinfo_info_DateCreatedTextBox.Clear();
                 modinfo_info_InstalledTextBox.Clear();

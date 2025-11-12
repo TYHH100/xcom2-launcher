@@ -273,7 +273,7 @@
             // 
             this.status_toolstrip_label.Name = "status_toolstrip_label";
             this.status_toolstrip_label.Size = new System.Drawing.Size(42, 17);
-            this.status_toolstrip_label.Text = "Ready.";
+            this.status_toolstrip_label.Text = "就绪.";
             // 
             // progress_toolstrip_progressbar
             // 
@@ -333,13 +333,13 @@
             this.exitToolStripMenuItem});
             this.runToolStripMenuItem.Name = "runToolStripMenuItem";
             this.runToolStripMenuItem.Size = new System.Drawing.Size(37, 24);
-            this.runToolStripMenuItem.Text = "&File";
+            this.runToolStripMenuItem.Text = "&文件";
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
-            this.saveToolStripMenuItem.Text = "Save settings";
+            this.saveToolStripMenuItem.Text = "保存设置";
             this.saveToolStripMenuItem.ToolTipText = "Saves the current settings and updates XCOM configuration \r\nfiles with respect to" +
     " currently active mods and mod folders.";
             // 
@@ -347,7 +347,7 @@
             // 
             this.reloadToolStripMenuItem.Name = "reloadToolStripMenuItem";
             this.reloadToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
-            this.reloadToolStripMenuItem.Text = "Reset settings";
+            this.reloadToolStripMenuItem.Text = "重置设置";
             this.reloadToolStripMenuItem.ToolTipText = "Restores the settings from last manual save or\r\nsince last game launch.";
             // 
             // toolStripSeparator1
@@ -359,7 +359,7 @@
             // 
             this.searchForModsToolStripMenuItem.Name = "searchForModsToolStripMenuItem";
             this.searchForModsToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
-            this.searchForModsToolStripMenuItem.Text = "Search for new mods";
+            this.searchForModsToolStripMenuItem.Text = "载入订阅新的模组";
             this.searchForModsToolStripMenuItem.ToolTipText = "Scans all known mod directories for new mods and adds them to the mod list.\r\nThis" +
     " is useful for adding new mods without re-starting AML.";
             // 
@@ -367,7 +367,7 @@
             // 
             this.updateEntriesToolStripMenuItem.Name = "updateEntriesToolStripMenuItem";
             this.updateEntriesToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
-            this.updateEntriesToolStripMenuItem.Text = "Update mod information";
+            this.updateEntriesToolStripMenuItem.Text = "更新模组信息";
             this.updateEntriesToolStripMenuItem.ToolTipText = "Updates the current state of all mods, by performing some validations \r\nand by re" +
     "questing the latest mod information from the Steam workshop.\r\nThis task is also " +
     "performed when you start AML.";
@@ -388,7 +388,7 @@
             this.folderToChimeraDataToolStripMenuItem});
             this.openSpecialFoldersToolStripMenuItem.Name = "openSpecialFoldersToolStripMenuItem";
             this.openSpecialFoldersToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
-            this.openSpecialFoldersToolStripMenuItem.Text = "Open special folder";
+            this.openSpecialFoldersToolStripMenuItem.Text = "打开指定文件夹";
             // 
             // folderToAmlToolStripMenuItem
             // 
@@ -400,31 +400,31 @@
             // 
             this.folderToX2InstallToolStripMenuItem.Name = "folderToX2InstallToolStripMenuItem";
             this.folderToX2InstallToolStripMenuItem.Size = new System.Drawing.Size(262, 22);
-            this.folderToX2InstallToolStripMenuItem.Text = "XCOM 2 - Installation";
+            this.folderToX2InstallToolStripMenuItem.Text = "XCOM 2 - 安装目录";
             // 
             // folderToX2DataToolStripMenuItem
             // 
             this.folderToX2DataToolStripMenuItem.Name = "folderToX2DataToolStripMenuItem";
             this.folderToX2DataToolStripMenuItem.Size = new System.Drawing.Size(262, 22);
-            this.folderToX2DataToolStripMenuItem.Text = "XCOM 2 - Data";
+            this.folderToX2DataToolStripMenuItem.Text = "XCOM 2 - 数据目录";
             // 
             // folderToWotcDataToolStripMenuItem
             // 
             this.folderToWotcDataToolStripMenuItem.Name = "folderToWotcDataToolStripMenuItem";
             this.folderToWotcDataToolStripMenuItem.Size = new System.Drawing.Size(262, 22);
-            this.folderToWotcDataToolStripMenuItem.Text = "XCOM 2 WotC - Data";
+            this.folderToWotcDataToolStripMenuItem.Text = "XCOM 2 WotC - 数据目录";
             // 
             // folderToChimeraInstallToolStripMenuItem
             // 
             this.folderToChimeraInstallToolStripMenuItem.Name = "folderToChimeraInstallToolStripMenuItem";
             this.folderToChimeraInstallToolStripMenuItem.Size = new System.Drawing.Size(262, 22);
-            this.folderToChimeraInstallToolStripMenuItem.Text = "XCOM Chimera Squad - Installation";
+            this.folderToChimeraInstallToolStripMenuItem.Text = "XCOM Chimera Squad - 安装目录";
             // 
             // folderToChimeraDataToolStripMenuItem
             // 
             this.folderToChimeraDataToolStripMenuItem.Name = "folderToChimeraDataToolStripMenuItem";
             this.folderToChimeraDataToolStripMenuItem.Size = new System.Drawing.Size(262, 22);
-            this.folderToChimeraDataToolStripMenuItem.Text = "XCOM Chimera Squad - Data";
+            this.folderToChimeraDataToolStripMenuItem.Text = "XCOM Chimera Squad - 数据目录";
             // 
             // openLogFileToolStripMenuItem
             // 
@@ -435,7 +435,7 @@
             this.chimeraLogFileToolStripMenuItem});
             this.openLogFileToolStripMenuItem.Name = "openLogFileToolStripMenuItem";
             this.openLogFileToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
-            this.openLogFileToolStripMenuItem.Text = "Open log file";
+            this.openLogFileToolStripMenuItem.Text = "打开日志文件";
             // 
             // amlLogFileToolStripMenuItem1
             // 
@@ -470,7 +470,7 @@
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
-            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Text = "退出";
             // 
             // settingsToolStripMenuItem
             // 
@@ -481,7 +481,7 @@
             this.manageCategoriesToolStripMenuItem});
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
             this.settingsToolStripMenuItem.Size = new System.Drawing.Size(61, 24);
-            this.settingsToolStripMenuItem.Text = "Options";
+            this.settingsToolStripMenuItem.Text = "选项";
             // 
             // showHiddenModsToolStripMenuItem
             // 
@@ -489,7 +489,7 @@
             this.showHiddenModsToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.showHiddenModsToolStripMenuItem.Name = "showHiddenModsToolStripMenuItem";
             this.showHiddenModsToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
-            this.showHiddenModsToolStripMenuItem.Text = "Show hidden mods";
+            this.showHiddenModsToolStripMenuItem.Text = "显示隐藏的模组";
             this.showHiddenModsToolStripMenuItem.ToolTipText = "Show/hide all mods, that are currently set to \"hidden\".";
             // 
             // toolStripSeparator3
@@ -501,13 +501,13 @@
             // 
             this.editOptionsToolStripMenuItem.Name = "editOptionsToolStripMenuItem";
             this.editOptionsToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
-            this.editOptionsToolStripMenuItem.Text = "Settings...";
+            this.editOptionsToolStripMenuItem.Text = "设置...";
             // 
             // manageCategoriesToolStripMenuItem
             // 
             this.manageCategoriesToolStripMenuItem.Name = "manageCategoriesToolStripMenuItem";
             this.manageCategoriesToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
-            this.manageCategoriesToolStripMenuItem.Text = "Categories...";
+            this.manageCategoriesToolStripMenuItem.Text = "分组...";
             // 
             // toolsToolStripMenuItem
             // 
@@ -517,7 +517,7 @@
             this.resubscribeToModsToolStripMenuItem});
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
             this.toolsToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
-            this.toolsToolStripMenuItem.Text = "Tools";
+            this.toolsToolStripMenuItem.Text = "工具";
             // 
             // importActiveModsToolStripMenuItem
             // 
@@ -527,13 +527,13 @@
             this.importFromChimeraSquadToolStripMenuItem});
             this.importActiveModsToolStripMenuItem.Name = "importActiveModsToolStripMenuItem";
             this.importActiveModsToolStripMenuItem.Size = new System.Drawing.Size(245, 22);
-            this.importActiveModsToolStripMenuItem.Text = "Import active mods";
+            this.importActiveModsToolStripMenuItem.Text = "导入启用模组";
             // 
             // importFromXCOM2ToolStripMenuItem
             // 
             this.importFromXCOM2ToolStripMenuItem.Name = "importFromXCOM2ToolStripMenuItem";
             this.importFromXCOM2ToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
-            this.importFromXCOM2ToolStripMenuItem.Text = "From XCOM 2 config";
+            this.importFromXCOM2ToolStripMenuItem.Text = "从 XCOM 2 配置文件中导入";
             this.importFromXCOM2ToolStripMenuItem.ToolTipText = "Enables all mods in the mods list, that are currently listed \r\nas active in the X" +
     "COM 2 basegame config file.";
             // 
@@ -541,7 +541,7 @@
             // 
             this.importFromWotCToolStripMenuItem.Name = "importFromWotCToolStripMenuItem";
             this.importFromWotCToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
-            this.importFromWotCToolStripMenuItem.Text = "From WotC config";
+            this.importFromWotCToolStripMenuItem.Text = "从 WotC 配置文件中导入";
             this.importFromWotCToolStripMenuItem.ToolTipText = "Enables all mods in the mods list, that are currently listed \r\nas active in the W" +
     "otC config file.";
             // 
@@ -557,13 +557,13 @@
             // 
             this.cleanModsToolStripMenuItem.Name = "cleanModsToolStripMenuItem";
             this.cleanModsToolStripMenuItem.Size = new System.Drawing.Size(245, 22);
-            this.cleanModsToolStripMenuItem.Text = "Clean mods...";
+            this.cleanModsToolStripMenuItem.Text = "清理模组...";
             // 
             // resubscribeToModsToolStripMenuItem
             // 
             this.resubscribeToModsToolStripMenuItem.Name = "resubscribeToModsToolStripMenuItem";
             this.resubscribeToModsToolStripMenuItem.Size = new System.Drawing.Size(245, 22);
-            this.resubscribeToModsToolStripMenuItem.Text = "Resubscribe to uninstalled mods";
+            this.resubscribeToModsToolStripMenuItem.Text = "重新订阅已卸载的模组";
             this.resubscribeToModsToolStripMenuItem.ToolTipText = "Subscribe to and download all workshop mods, \r\nthat are currently listed in AML, " +
     "but no longer installed.";
             // 
@@ -573,7 +573,7 @@
             this.runXCOM2ToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("runXCOM2ToolStripMenuItem.Image")));
             this.runXCOM2ToolStripMenuItem.Name = "runXCOM2ToolStripMenuItem";
             this.runXCOM2ToolStripMenuItem.Size = new System.Drawing.Size(107, 24);
-            this.runXCOM2ToolStripMenuItem.Text = "Run &XCOM 2";
+            this.runXCOM2ToolStripMenuItem.Text = "启动|&XCOM 2";
             this.runXCOM2ToolStripMenuItem.ToolTipText = "Start XCOM 2 with selected mods";
             // 
             // runWarOfTheChosenToolStripMenuItem
@@ -582,7 +582,7 @@
             this.runWarOfTheChosenToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("runWarOfTheChosenToolStripMenuItem.Image")));
             this.runWarOfTheChosenToolStripMenuItem.Name = "runWarOfTheChosenToolStripMenuItem";
             this.runWarOfTheChosenToolStripMenuItem.Size = new System.Drawing.Size(161, 24);
-            this.runWarOfTheChosenToolStripMenuItem.Text = "Run War of the Chosen";
+            this.runWarOfTheChosenToolStripMenuItem.Text = "启动|天选之战[WOTC]";
             this.runWarOfTheChosenToolStripMenuItem.ToolTipText = "Start WotC with selected mods";
             // 
             // runChallengeModeToolStripMenuItem
@@ -590,7 +590,7 @@
             this.runChallengeModeToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("runChallengeModeToolStripMenuItem.Image")));
             this.runChallengeModeToolStripMenuItem.Name = "runChallengeModeToolStripMenuItem";
             this.runChallengeModeToolStripMenuItem.Size = new System.Drawing.Size(150, 24);
-            this.runChallengeModeToolStripMenuItem.Text = "Run Challenge Mode";
+            this.runChallengeModeToolStripMenuItem.Text = "启动|挑战模式";
             this.runChallengeModeToolStripMenuItem.ToolTipText = "Start WotC without mods and with debug console disabled";
             // 
             // aboutToolStripMenuItem
@@ -605,13 +605,13 @@
             this.openDiscordToolStripMenuItem});
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(52, 24);
-            this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.Text = "关于";
             // 
             // infoToolStripMenuItem
             // 
             this.infoToolStripMenuItem.Name = "infoToolStripMenuItem";
             this.infoToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
-            this.infoToolStripMenuItem.Text = "Info...";
+            this.infoToolStripMenuItem.Text = "信息...";
             // 
             // checkForUpdatesToolStripMenuItem
             // 
@@ -623,7 +623,7 @@
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
             this.toolStripSeparator4.Size = new System.Drawing.Size(186, 6);
-            // 
+            // F
             // openHomepageToolStripMenuItem
             // 
             this.openHomepageToolStripMenuItem.Name = "openHomepageToolStripMenuItem";
@@ -648,7 +648,7 @@
             this.runChimeraSquadToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("runChimeraSquadToolStripMenuItem.Image")));
             this.runChimeraSquadToolStripMenuItem.Name = "runChimeraSquadToolStripMenuItem";
             this.runChimeraSquadToolStripMenuItem.Size = new System.Drawing.Size(182, 24);
-            this.runChimeraSquadToolStripMenuItem.Text = "Run XCOM Chimera Squad";
+            this.runChimeraSquadToolStripMenuItem.Text = "启动|XCOM Chimera Squad";
             this.runChimeraSquadToolStripMenuItem.ToolTipText = "Start XCOM Chimera Squad with selected mods";
             // 
             // error_provider
@@ -680,7 +680,7 @@
             this.modlist_tab.Padding = new System.Windows.Forms.Padding(3);
             this.modlist_tab.Size = new System.Drawing.Size(976, 662);
             this.modlist_tab.TabIndex = 0;
-            this.modlist_tab.Text = "Mods";
+            this.modlist_tab.Text = "Mod";
             this.modlist_tab.UseVisualStyleBackColor = true;
             // 
             // horizontal_splitcontainer
@@ -787,7 +787,7 @@
             // 
             this.olvcName.AspectName = "Name";
             this.olvcName.Hideable = false;
-            this.olvcName.Text = "Name";
+            this.olvcName.Text = "模组名";
             this.olvcName.Width = 300;
             // 
             // olvColNotes
@@ -795,21 +795,21 @@
             this.olvColNotes.AspectName = "Note";
             this.olvColNotes.DisplayIndex = 2;
             this.olvColNotes.IsVisible = false;
-            this.olvColNotes.Text = "Notes";
+            this.olvColNotes.Text = "注释";
             this.olvColNotes.Width = 100;
             // 
             // olvAuthor
             // 
             this.olvAuthor.AspectName = "Author";
             this.olvAuthor.CellEditUseWholeCell = true;
-            this.olvAuthor.Text = "Author";
+            this.olvAuthor.Text = "作者";
             this.olvAuthor.Width = 120;
             this.olvAuthor.WordWrap = true;
             // 
             // olvcCategory
             // 
             this.olvcCategory.AspectName = "Category";
-            this.olvcCategory.Text = "Category";
+            this.olvcCategory.Text = "分组";
             this.olvcCategory.Width = 80;
             // 
             // olvcID
@@ -822,14 +822,14 @@
             // olvcState
             // 
             this.olvcState.IsEditable = false;
-            this.olvcState.Text = "State";
+            this.olvcState.Text = "状态";
             this.olvcState.Width = 80;
             // 
             // olvcSource
             // 
             this.olvcSource.DisplayIndex = 6;
             this.olvcSource.IsVisible = false;
-            this.olvcSource.Text = "Source";
+            this.olvcSource.Text = "来源";
             // 
             // olvcOrder
             // 
@@ -839,7 +839,7 @@
             this.olvcOrder.HeaderTextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.olvcOrder.IsVisible = false;
             this.olvcOrder.MinimumWidth = 40;
-            this.olvcOrder.Text = "Order";
+            this.olvcOrder.Text = "顺序";
             this.olvcOrder.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // olvcSize
@@ -847,7 +847,7 @@
             this.olvcSize.AspectName = "Size";
             this.olvcSize.IsEditable = false;
             this.olvcSize.Searchable = false;
-            this.olvcSize.Text = "Size";
+            this.olvcSize.Text = "大小";
             this.olvcSize.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // olvcLastUpdated
@@ -855,7 +855,7 @@
             this.olvcLastUpdated.AspectName = "DateUpdated";
             this.olvcLastUpdated.IsEditable = false;
             this.olvcLastUpdated.Searchable = false;
-            this.olvcLastUpdated.Text = "Last Update";
+            this.olvcLastUpdated.Text = "最后更新时间";
             this.olvcLastUpdated.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.olvcLastUpdated.Width = 120;
             // 
@@ -864,7 +864,7 @@
             this.olvcDateAdded.AspectName = "DateAdded";
             this.olvcDateAdded.IsEditable = false;
             this.olvcDateAdded.Searchable = false;
-            this.olvcDateAdded.Text = "Date Added";
+            this.olvcDateAdded.Text = "添加时间";
             this.olvcDateAdded.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.olvcDateAdded.Width = 120;
             // 
@@ -874,7 +874,7 @@
             this.olvcDateCreated.IsEditable = false;
             this.olvcDateCreated.IsVisible = false;
             this.olvcDateCreated.Searchable = false;
-            this.olvcDateCreated.Text = "Date Created";
+            this.olvcDateCreated.Text = "创建日期";
             this.olvcDateCreated.Width = 120;
             // 
             // olvcPath
@@ -883,7 +883,7 @@
             this.olvcPath.IsEditable = false;
             this.olvcPath.IsVisible = false;
             this.olvcPath.Searchable = false;
-            this.olvcPath.Text = "Path";
+            this.olvcPath.Text = "路径";
             this.olvcPath.Width = 160;
             // 
             // olvcHasBackup
@@ -891,21 +891,21 @@
             this.olvcHasBackup.AspectName = "HasBackedUpSettings";
             this.olvcHasBackup.DisplayIndex = 9;
             this.olvcHasBackup.IsVisible = false;
-            this.olvcHasBackup.Text = "Has Backups";
+            this.olvcHasBackup.Text = "有备份";
             // 
             // olvcWorkshopID
             // 
             this.olvcWorkshopID.AspectName = "WorkshopID";
             this.olvcWorkshopID.IsEditable = false;
             this.olvcWorkshopID.IsVisible = false;
-            this.olvcWorkshopID.Text = "Workshop ID";
+            this.olvcWorkshopID.Text = "创意工坊ID";
             // 
             // olvcHidden
             // 
             this.olvcHidden.AspectName = "isHidden";
             this.olvcHidden.DisplayIndex = 10;
             this.olvcHidden.IsVisible = false;
-            this.olvcHidden.Text = "Hidden";
+            this.olvcHidden.Text = "隐藏";
             // 
             // olvcTags
             // 
@@ -913,7 +913,7 @@
             this.olvcTags.AutoCompleteEditor = false;
             this.olvcTags.AutoCompleteEditorMode = System.Windows.Forms.AutoCompleteMode.None;
             this.olvcTags.MinimumWidth = 250;
-            this.olvcTags.Text = "Tags";
+            this.olvcTags.Text = "标签";
             this.olvcTags.Width = 250;
             // 
             // olvSteamLink
@@ -924,7 +924,7 @@
             this.olvSteamLink.IsEditable = false;
             this.olvSteamLink.IsVisible = false;
             this.olvSteamLink.Searchable = false;
-            this.olvSteamLink.Text = "Steam Link";
+            this.olvSteamLink.Text = "Steam链接";
             this.olvSteamLink.Width = 225;
             // 
             // olvBrowserLink
@@ -935,14 +935,14 @@
             this.olvBrowserLink.IsEditable = false;
             this.olvBrowserLink.IsVisible = false;
             this.olvBrowserLink.Searchable = false;
-            this.olvBrowserLink.Text = "Browser Link";
+            this.olvBrowserLink.Text = "浏览器链接";
             // 
             // olvForWOTC
             // 
             this.olvForWOTC.AspectName = "BuiltForWOTC";
             this.olvForWOTC.IsEditable = false;
             this.olvForWOTC.Searchable = false;
-            this.olvForWOTC.Text = "For WOTC";
+            this.olvForWOTC.Text = "专为WOTC制作";
             // 
             // pModsLegend
             // 
@@ -967,8 +967,8 @@
             this.bClearStateFilter.Name = "bClearStateFilter";
             this.bClearStateFilter.Size = new System.Drawing.Size(60, 25);
             this.bClearStateFilter.TabIndex = 16;
-            this.bClearStateFilter.Text = "Clear";
-            this.toolTip.SetToolTip(this.bClearStateFilter, "Disables all active state filters.");
+            this.bClearStateFilter.Text = "清除";
+            this.toolTip.SetToolTip(this.bClearStateFilter, "禁用所有启用的模组.");
             this.bClearStateFilter.UseVisualStyleBackColor = true;
             this.bClearStateFilter.Click += new System.EventHandler(this.bClearStateFilter_Click);
             // 
@@ -983,7 +983,7 @@
             this.cFilterMissingDependency.Name = "cFilterMissingDependency";
             this.cFilterMissingDependency.Size = new System.Drawing.Size(173, 24);
             this.cFilterMissingDependency.TabIndex = 15;
-            this.cFilterMissingDependency.Text = "Missing dependency";
+            this.cFilterMissingDependency.Text = "缺少依赖";
             this.cFilterMissingDependency.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.toolTip.SetToolTip(this.cFilterMissingDependency, "A mod will indicate a \"Missing dependency\", when not all required mods\r\nare enabl" +
         "ed or installed. Check \"Mod Info -> Dependency Tab\".");
@@ -996,7 +996,7 @@
             this.bRefreshStateFilter.Name = "bRefreshStateFilter";
             this.bRefreshStateFilter.Size = new System.Drawing.Size(60, 25);
             this.bRefreshStateFilter.TabIndex = 14;
-            this.bRefreshStateFilter.Text = "Refresh";
+            this.bRefreshStateFilter.Text = "刷新";
             this.toolTip.SetToolTip(this.bRefreshStateFilter, "Manually refresh the mod view, using the selected filters.");
             this.bRefreshStateFilter.UseVisualStyleBackColor = true;
             this.bRefreshStateFilter.Click += new System.EventHandler(this.bRefreshStateFilter_Click);
@@ -1218,7 +1218,7 @@
             this.cShowStateFilter.Name = "cShowStateFilter";
             this.cShowStateFilter.Size = new System.Drawing.Size(106, 17);
             this.cShowStateFilter.TabIndex = 2;
-            this.cShowStateFilter.Text = "Show state filters";
+            this.cShowStateFilter.Text = "显示状态过滤器";
             this.toolTip.SetToolTip(this.cShowStateFilter, "Enable/disable the state filter bar below the mod list.");
             this.cShowStateFilter.UseVisualStyleBackColor = true;
             this.cShowStateFilter.CheckedChanged += new System.EventHandler(this.cShowLegend_CheckedChanged);
@@ -1232,7 +1232,7 @@
             this.cEnableGrouping.Name = "cEnableGrouping";
             this.cEnableGrouping.Size = new System.Drawing.Size(103, 17);
             this.cEnableGrouping.TabIndex = 1;
-            this.cEnableGrouping.Text = "Enable grouping";
+            this.cEnableGrouping.Text = "启用分组";
             this.cEnableGrouping.UseVisualStyleBackColor = true;
             this.cEnableGrouping.CheckedChanged += new System.EventHandler(this.cEnableGrouping_CheckedChanged);
             // 
@@ -1242,7 +1242,7 @@
             this.modlist_toggleGroupsButton.Name = "modlist_toggleGroupsButton";
             this.modlist_toggleGroupsButton.Size = new System.Drawing.Size(132, 23);
             this.modlist_toggleGroupsButton.TabIndex = 0;
-            this.modlist_toggleGroupsButton.Text = "Expand/collapse groups";
+            this.modlist_toggleGroupsButton.Text = "展开/收起分组";
             this.modlist_toggleGroupsButton.UseVisualStyleBackColor = true;
             this.modlist_toggleGroupsButton.Click += new System.EventHandler(this.modlist_toggleGroupsButton_Click);
             // 
@@ -1277,7 +1277,7 @@
             // modlist_FilterCueTextBox
             // 
             this.modlist_FilterCueTextBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.modlist_FilterCueTextBox.CueText = "Filter Mods";
+            this.modlist_FilterCueTextBox.CueText = "搜索模组";
             this.modlist_FilterCueTextBox.Location = new System.Drawing.Point(3, 5);
             this.modlist_FilterCueTextBox.Name = "modlist_FilterCueTextBox";
             this.modlist_FilterCueTextBox.Size = new System.Drawing.Size(175, 20);
@@ -1295,7 +1295,7 @@
             this.modinfo_groupbox.Size = new System.Drawing.Size(970, 269);
             this.modinfo_groupbox.TabIndex = 3;
             this.modinfo_groupbox.TabStop = false;
-            this.modinfo_groupbox.Text = "Mod Info";
+            this.modinfo_groupbox.Text = "模组信息";
             // 
             // tableLayoutPanel3
             // 
@@ -1350,7 +1350,7 @@
             this.modinfo_details_tab.Padding = new System.Windows.Forms.Padding(3);
             this.modinfo_details_tab.Size = new System.Drawing.Size(760, 228);
             this.modinfo_details_tab.TabIndex = 0;
-            this.modinfo_details_tab.Text = "Info";
+            this.modinfo_details_tab.Text = "信息";
             this.modinfo_details_tab.UseVisualStyleBackColor = true;
             // 
             // modinfo_info_CreatedLabel
@@ -1360,7 +1360,7 @@
             this.modinfo_info_CreatedLabel.Name = "modinfo_info_CreatedLabel";
             this.modinfo_info_CreatedLabel.Size = new System.Drawing.Size(44, 13);
             this.modinfo_info_CreatedLabel.TabIndex = 10;
-            this.modinfo_info_CreatedLabel.Text = "Created";
+            this.modinfo_info_CreatedLabel.Text = "创建";
             // 
             // modinfo_info_DescriptionLabel
             // 
@@ -1369,7 +1369,7 @@
             this.modinfo_info_DescriptionLabel.Name = "modinfo_info_DescriptionLabel";
             this.modinfo_info_DescriptionLabel.Size = new System.Drawing.Size(60, 13);
             this.modinfo_info_DescriptionLabel.TabIndex = 9;
-            this.modinfo_info_DescriptionLabel.Text = "Description";
+            this.modinfo_info_DescriptionLabel.Text = "描述";
             // 
             // modinfo_info_InstalledTextBox
             // 
@@ -1394,7 +1394,7 @@
             this.modinfo_info_InstalledLabel.Name = "modinfo_info_InstalledLabel";
             this.modinfo_info_InstalledLabel.Size = new System.Drawing.Size(46, 13);
             this.modinfo_info_InstalledLabel.TabIndex = 4;
-            this.modinfo_info_InstalledLabel.Text = "Installed";
+            this.modinfo_info_InstalledLabel.Text = "安装";
             // 
             // modinfo_info_TitleTextBox
             // 
@@ -1419,7 +1419,7 @@
             this.modinfo_info_TitleLabel.Name = "modinfo_info_TitleLabel";
             this.modinfo_info_TitleLabel.Size = new System.Drawing.Size(27, 13);
             this.modinfo_info_TitleLabel.TabIndex = 1;
-            this.modinfo_info_TitleLabel.Text = "Title";
+            this.modinfo_info_TitleLabel.Text = "标题";
             // 
             // modinfo_info_AuthorLabel
             // 
@@ -1428,7 +1428,7 @@
             this.modinfo_info_AuthorLabel.Name = "modinfo_info_AuthorLabel";
             this.modinfo_info_AuthorLabel.Size = new System.Drawing.Size(38, 13);
             this.modinfo_info_AuthorLabel.TabIndex = 0;
-            this.modinfo_info_AuthorLabel.Text = "Author";
+            this.modinfo_info_AuthorLabel.Text = "作者";
             // 
             // modinfo_info_DescriptionRichTextBox
             // 
@@ -1450,7 +1450,7 @@
             this.modinfo_notes_tab.Name = "modinfo_notes_tab";
             this.modinfo_notes_tab.Size = new System.Drawing.Size(760, 228);
             this.modinfo_notes_tab.TabIndex = 6;
-            this.modinfo_notes_tab.Text = "Notes";
+            this.modinfo_notes_tab.Text = "注释";
             this.modinfo_notes_tab.UseVisualStyleBackColor = true;
             // 
             // modInfoNotesText
@@ -1472,7 +1472,7 @@
             this.modinfo_readme_tab.Padding = new System.Windows.Forms.Padding(3);
             this.modinfo_readme_tab.Size = new System.Drawing.Size(760, 228);
             this.modinfo_readme_tab.TabIndex = 1;
-            this.modinfo_readme_tab.Text = "ReadMe";
+            this.modinfo_readme_tab.Text = "自述文件";
             this.modinfo_readme_tab.UseVisualStyleBackColor = true;
             // 
             // modinfo_readme_RichTextBox
@@ -1497,7 +1497,7 @@
             this.modinfo_inspect_tab.Padding = new System.Windows.Forms.Padding(3);
             this.modinfo_inspect_tab.Size = new System.Drawing.Size(760, 228);
             this.modinfo_inspect_tab.TabIndex = 2;
-            this.modinfo_inspect_tab.Text = "Inspect";
+            this.modinfo_inspect_tab.Text = "查看";
             this.modinfo_inspect_tab.UseVisualStyleBackColor = true;
             // 
             // modinfo_inspect_propertygrid
@@ -1519,7 +1519,7 @@
             this.modinfo_config_tab.Padding = new System.Windows.Forms.Padding(3);
             this.modinfo_config_tab.Size = new System.Drawing.Size(760, 228);
             this.modinfo_config_tab.TabIndex = 3;
-            this.modinfo_config_tab.Text = "Config";
+            this.modinfo_config_tab.Text = "配置";
             this.modinfo_config_tab.UseVisualStyleBackColor = true;
             // 
             // modinfo_config_TableLayoutPanel
@@ -1688,7 +1688,7 @@
             this.modinfo_changelog_tab.Padding = new System.Windows.Forms.Padding(3);
             this.modinfo_changelog_tab.Size = new System.Drawing.Size(760, 228);
             this.modinfo_changelog_tab.TabIndex = 4;
-            this.modinfo_changelog_tab.Text = "Changelog";
+            this.modinfo_changelog_tab.Text = "改动日志";
             this.modinfo_changelog_tab.UseVisualStyleBackColor = true;
             // 
             // modinfo_changelog_richtextbox
@@ -1711,7 +1711,7 @@
             this.modinfo_dependencies_tab.Padding = new System.Windows.Forms.Padding(3);
             this.modinfo_dependencies_tab.Size = new System.Drawing.Size(760, 228);
             this.modinfo_dependencies_tab.TabIndex = 5;
-            this.modinfo_dependencies_tab.Text = "Dependencies";
+            this.modinfo_dependencies_tab.Text = "依赖";
             this.modinfo_dependencies_tab.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel1
@@ -1793,19 +1793,19 @@
             // 
             this.olvColReqModsName.AspectName = "Name";
             this.olvColReqModsName.Hideable = false;
-            this.olvColReqModsName.Text = "Name";
+            this.olvColReqModsName.Text = "模组名";
             this.olvColReqModsName.Width = 229;
             // 
             // olvColReqModsState
             // 
             this.olvColReqModsState.IsEditable = false;
-            this.olvColReqModsState.Text = "State";
+            this.olvColReqModsState.Text = "状态";
             this.olvColReqModsState.Width = 84;
             // 
             // olvColReqModsHidden
             // 
             this.olvColReqModsHidden.AspectName = "isHidden";
-            this.olvColReqModsHidden.Text = "Hidden";
+            this.olvColReqModsHidden.Text = "隐藏";
             // 
             // olvColReqModsSteamUrl
             // 
@@ -1813,7 +1813,7 @@
             this.olvColReqModsSteamUrl.Hyperlink = true;
             this.olvColReqModsSteamUrl.IsEditable = false;
             this.olvColReqModsSteamUrl.Searchable = false;
-            this.olvColReqModsSteamUrl.Text = "Steam Link";
+            this.olvColReqModsSteamUrl.Text = "Steam链接";
             this.olvColReqModsSteamUrl.Width = 225;
             // 
             // olvColReqModsWotc
@@ -1821,13 +1821,13 @@
             this.olvColReqModsWotc.AspectName = "BuiltForWOTC";
             this.olvColReqModsWotc.IsEditable = false;
             this.olvColReqModsWotc.Searchable = false;
-            this.olvColReqModsWotc.Text = "For WOTC";
+            this.olvColReqModsWotc.Text = "专为WOTC制作";
             this.olvColReqModsWotc.Width = 63;
             // 
             // olvColReqModsIgnore
             // 
             this.olvColReqModsIgnore.CheckBoxes = true;
-            this.olvColReqModsIgnore.Text = "Ignored";
+            this.olvColReqModsIgnore.Text = "忽略";
             this.olvColReqModsIgnore.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel6
@@ -1858,7 +1858,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(92, 18);
             this.label5.TabIndex = 2;
-            this.label5.Text = "Required mods:";
+            this.label5.Text = "需要模组:";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel5
@@ -1923,19 +1923,19 @@
             // 
             this.olvColDepModsName.AspectName = "Name";
             this.olvColDepModsName.Hideable = false;
-            this.olvColDepModsName.Text = "Name";
+            this.olvColDepModsName.Text = "模组名";
             this.olvColDepModsName.Width = 229;
             // 
             // olvColDepModsState
             // 
             this.olvColDepModsState.IsEditable = false;
-            this.olvColDepModsState.Text = "State";
+            this.olvColDepModsState.Text = "状态";
             this.olvColDepModsState.Width = 86;
             // 
             // olvColDepModsHidden
             // 
             this.olvColDepModsHidden.AspectName = "isHidden";
-            this.olvColDepModsHidden.Text = "Hidden";
+            this.olvColDepModsHidden.Text = "隐藏";
             // 
             // olvColDepModsSteamUrl
             // 
@@ -1943,7 +1943,7 @@
             this.olvColDepModsSteamUrl.Hyperlink = true;
             this.olvColDepModsSteamUrl.IsEditable = false;
             this.olvColDepModsSteamUrl.Searchable = false;
-            this.olvColDepModsSteamUrl.Text = "Steam Link";
+            this.olvColDepModsSteamUrl.Text = "Steam链接";
             this.olvColDepModsSteamUrl.Width = 224;
             // 
             // olvColDepModsUrl
@@ -1961,7 +1961,7 @@
             this.olvColDepModsWotc.AspectName = "BuiltForWOTC";
             this.olvColDepModsWotc.IsEditable = false;
             this.olvColDepModsWotc.Searchable = false;
-            this.olvColDepModsWotc.Text = "For WOTC";
+            this.olvColDepModsWotc.Text = "专为WOTC制作";
             this.olvColDepModsWotc.Width = 63;
             // 
             // label6
@@ -1971,7 +1971,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(748, 18);
             this.label6.TabIndex = 3;
-            this.label6.Text = "Dependent mods:";
+            this.label6.Text = "依赖此模组:";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // modinfo_image_picturebox
@@ -2022,7 +2022,7 @@
             this.conflicts_log_label.Name = "conflicts_log_label";
             this.conflicts_log_label.Size = new System.Drawing.Size(28, 13);
             this.conflicts_log_label.TabIndex = 8;
-            this.conflicts_log_label.Text = "Log:";
+            this.conflicts_log_label.Text = "日志:";
             // 
             // conflicts_datagrid
             // 
@@ -2088,7 +2088,7 @@
             this.export_tab.Padding = new System.Windows.Forms.Padding(3);
             this.export_tab.Size = new System.Drawing.Size(976, 662);
             this.export_tab.TabIndex = 2;
-            this.export_tab.Text = "Profiles";
+            this.export_tab.Text = "配置文件";
             this.export_tab.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel2
@@ -2145,7 +2145,7 @@
             this.export_all_mods_checkbox.Name = "export_all_mods_checkbox";
             this.export_all_mods_checkbox.Size = new System.Drawing.Size(104, 17);
             this.export_all_mods_checkbox.TabIndex = 3;
-            this.export_all_mods_checkbox.Text = "Include All Mods";
+            this.export_all_mods_checkbox.Text = "包含所有模组";
             this.export_all_mods_checkbox.UseVisualStyleBackColor = true;
             this.export_all_mods_checkbox.Visible = false;
             this.export_all_mods_checkbox.CheckedChanged += new System.EventHandler(this.ExportCheckboxCheckedChanged);
@@ -2157,7 +2157,7 @@
             this.export_workshop_link_checkbox.Name = "export_workshop_link_checkbox";
             this.export_workshop_link_checkbox.Size = new System.Drawing.Size(136, 17);
             this.export_workshop_link_checkbox.TabIndex = 0;
-            this.export_workshop_link_checkbox.Text = "Include Workshop Link";
+            this.export_workshop_link_checkbox.Text = "包含创意工坊链接";
             this.export_workshop_link_checkbox.UseVisualStyleBackColor = true;
             // 
             // export_group_checkbox
@@ -2169,7 +2169,7 @@
             this.export_group_checkbox.Name = "export_group_checkbox";
             this.export_group_checkbox.Size = new System.Drawing.Size(107, 17);
             this.export_group_checkbox.TabIndex = 2;
-            this.export_group_checkbox.Text = "Include Grouping";
+            this.export_group_checkbox.Text = "包含分组";
             this.export_group_checkbox.UseVisualStyleBackColor = true;
             // 
             // export_load_button

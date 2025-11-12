@@ -30,7 +30,7 @@ namespace XCOM2Launcher.Forms
 
         private void AddCategoryButtonClick(object sender, EventArgs e)
         {
-            var newName = Interaction.InputBox($"Please enter the name for new the category.", "New category", "");
+            var newName = Interaction.InputBox($"请输入新分组的名称.", "新建分组", "");
 
             if (string.IsNullOrEmpty(newName))
                 return;
@@ -63,11 +63,11 @@ namespace XCOM2Launcher.Forms
 
             if (category == ModInfo.DEFAULT_CATEGORY_NAME)
             {
-                MessageBox.Show($"Default category '{ModInfo.DEFAULT_CATEGORY_NAME}' can not be removed.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show($"默认分组 '{ModInfo.DEFAULT_CATEGORY_NAME}' 无法删除.", "信息", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
 
-            if (MessageBox.Show($"Are you sure you want to remove the category '{category}'?", "Delete category", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.No)
+            if (MessageBox.Show($"您确定要删除 '{category}' 这个分组吗?", "删除分组", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.No)
                 return;
 
             Log.Info($"Deleting category '{category}'");
@@ -105,7 +105,7 @@ namespace XCOM2Launcher.Forms
                 return;
             }
 
-            var newName = Interaction.InputBox($"Enter the new name for the category '{oldName}'.", "Rename category", oldName);
+            var newName = Interaction.InputBox($"输入分组 '{oldName}' 的新名称.", "重命名分组", oldName);
 
             if (string.IsNullOrEmpty(newName))
                 return;

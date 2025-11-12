@@ -45,7 +45,7 @@
 			this.moveCategoryUpButton.Name = "moveCategoryUpButton";
 			this.moveCategoryUpButton.Size = new System.Drawing.Size(75, 23);
 			this.moveCategoryUpButton.TabIndex = 15;
-			this.moveCategoryUpButton.Text = "Up";
+			this.moveCategoryUpButton.Text = "上移";
 			this.moveCategoryUpButton.UseVisualStyleBackColor = true;
 			this.moveCategoryUpButton.Click += new System.EventHandler(this.MoveCategoryUpButtonOnClick);
 			// 
@@ -68,7 +68,7 @@
 			this.moveCategoryDownButton.Name = "moveCategoryDownButton";
 			this.moveCategoryDownButton.Size = new System.Drawing.Size(75, 23);
 			this.moveCategoryDownButton.TabIndex = 17;
-			this.moveCategoryDownButton.Text = "Down";
+			this.moveCategoryDownButton.Text = "下移";
 			this.moveCategoryDownButton.UseVisualStyleBackColor = true;
 			this.moveCategoryDownButton.Click += new System.EventHandler(this.MoveCategoryDownButtonOnClick);
 			// 
@@ -79,7 +79,7 @@
 			this.addCategoryButton.Name = "addCategoryButton";
 			this.addCategoryButton.Size = new System.Drawing.Size(75, 23);
 			this.addCategoryButton.TabIndex = 20;
-			this.addCategoryButton.Text = "Add";
+			this.addCategoryButton.Text = "添加";
 			this.addCategoryButton.UseVisualStyleBackColor = true;
 			this.addCategoryButton.Click += new System.EventHandler(this.AddCategoryButtonClick);
 			// 
@@ -90,7 +90,7 @@
 			this.removeCategoryButton.Name = "removeCategoryButton";
 			this.removeCategoryButton.Size = new System.Drawing.Size(75, 23);
 			this.removeCategoryButton.TabIndex = 19;
-			this.removeCategoryButton.Text = "Remove";
+			this.removeCategoryButton.Text = "删除";
 			this.removeCategoryButton.UseVisualStyleBackColor = true;
 			this.removeCategoryButton.Click += new System.EventHandler(this.RemoveCategoryButtonOnClick);
 			// 
@@ -101,7 +101,7 @@
 			this.renameCategoryButton.Name = "renameCategoryButton";
 			this.renameCategoryButton.Size = new System.Drawing.Size(75, 23);
 			this.renameCategoryButton.TabIndex = 18;
-			this.renameCategoryButton.Text = "Rename";
+			this.renameCategoryButton.Text = "重命名";
 			this.renameCategoryButton.UseVisualStyleBackColor = true;
 			this.renameCategoryButton.Click += new System.EventHandler(this.RenameCategoryButtonOnClick);
 			// 
@@ -127,7 +127,7 @@
 			this.bClose.Name = "bClose";
 			this.bClose.Size = new System.Drawing.Size(75, 23);
 			this.bClose.TabIndex = 0;
-			this.bClose.Text = "Close";
+			this.bClose.Text = "关闭";
 			this.bClose.UseVisualStyleBackColor = true;
 			// 
 			// pMain
@@ -147,7 +147,7 @@
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(57, 13);
 			this.label1.TabIndex = 17;
-			this.label1.Text = "Categories";
+			this.label1.Text = "分组名称";
 			// 
 			// CategoryManager
 			// 
@@ -159,7 +159,7 @@
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Name = "CategoryManager";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-			this.Text = "Category manager";
+			this.Text = "分组管理";
 			this.pLeft.ResumeLayout(false);
 			this.pMain.ResumeLayout(false);
 			this.pMain.PerformLayout();
