@@ -9,6 +9,10 @@ on:
 jobs:
   build:
     runs-on: windows-latest
+
+    env:
+        Solution_Name: xcom2-launcher.sln
+        Output_Dir: AML-Complete
     
     steps:
     - name: Checkout code
@@ -18,28 +22,27 @@ jobs:
       uses: microsoft/setup-msbuild@v2
 
     - name: Restore NuGet packages
-      run: msbuild xcom2-launcher/xcom2-launcher.csproj /t:Restore /p:Configuration=Release
+      run: msbuild $env:Solution_Name /t:Restore /p:Configuration=Release
 
     - name: Build application (not publish)
       run: |
-        msbuild xcom2-launcher/xcom2-launcher.csproj `
-          /t:Build `
+        msbuild $env:Solution_Name /t:Build
           /p:Configuration=Release `
           /p:Platform=AnyCPU `
           /p:OutputPath=bin\Release
 
     - name: Copy necessary files to output directory
       run: |
-        New-Item -ItemType Directory -Path "AML-Complete" | Out-Null
-        
-        Copy-Item -Path "bin\Release\*.exe" -Destination "AML-Complete\" -Force
-        Copy-Item -Path "bin\Release\*.dll" -Destination "AML-Complete\" -Force
-        Copy-Item -Path "bin\Release\*.config" -Destination "AML-Complete\" -Force
-        Copy-Item -Path "bin\Release\*.pdb" -Destination "AML-Complete\" -Force
+        New-Item -ItemType Directory -Path "$env:Output_Dir" | Out-Null
+
+        Copy-Item -Path "bin\Release\*.exe" -Destination "$env:Output_Dir" -Force
+        Copy-Item -Path "bin\Release\*.dll" -Destination "$env:Output_Dir" -Force
+        Copy-Item -Path "bin\Release\*.config" -Destination "$env:Output_Dir" -Force
+        Copy-Item -Path "bin\Release\*.pdb" -Destination "$env:Output_Dir" -Force
 
     - name: Create distribution package
       run: |
-        Compress-Archive -Path "AML-Complete\*" -DestinationPath "XCOM2_AlternativeModLauncher.zip"
+        Compress-Archive -Path "$env:Output_Dir\*" -DestinationPath "XCOM2_AlternativeModLauncher.zip"
 
     - name: Upload artifact
       uses: actions/upload-artifact@v5
