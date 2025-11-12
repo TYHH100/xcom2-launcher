@@ -212,6 +212,7 @@ _Pvt_Extensions/
 ModelManifest.xml
 xcom2-launcher/ObjectListView/
 xcom2-launcher/.localhistory/
+AML-Complete/
 
 # Git merge files
 *.orig
