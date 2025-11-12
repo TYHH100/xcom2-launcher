@@ -27,7 +27,7 @@ jobs:
 
     - name: Build application
       run: |
-        msbuild $env:Solution_Name /t:Build /p:Configuration=Release /p:OutputPath=bin\Release /p:SkipGitVersion=true
+        msbuild $env:Solution_Name /t:Build /p:Configuration=Release /p:OutputPath=bin\Release
 
     - name: Copy necessary files to output directory
       run: |
