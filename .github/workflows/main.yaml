@@ -24,12 +24,9 @@ jobs:
     - name: Restore NuGet packages
       run: msbuild $env:Solution_Name /t:Restore /p:Configuration=Release
 
-    - name: Build application (not publish)
+    - name: Build application
       run: |
-        msbuild $env:Solution_Name /t:Build
-          /p:Configuration=Release `
-          /p:Platform=AnyCPU `
-          /p:OutputPath=bin\Release
+        msbuild $env:Solution_Name /t:Build /p:Configuration=Release /p:Platform=AnyCPU /p:OutputPath=bin\Release
 
     - name: Copy necessary files to output directory
       run: |
