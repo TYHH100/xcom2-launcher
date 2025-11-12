@@ -11,6 +11,7 @@ jobs:
     env:
         Solution_Name: xcom2-launcher/xcom2-launcher.sln
         Output_Dir: AML-Complete
+        Build_Output: xcom2-launcher\xcom2-launcher\bin\Release
     
     steps:
     - name: Checkout code
@@ -32,10 +33,10 @@ jobs:
       run: |
         New-Item -ItemType Directory -Path "$env:Output_Dir" | Out-Null
 
-        Copy-Item -Path "\..\bin\Release\*.exe" -Destination "$env:Output_Dir" -Force
-        Copy-Item -Path "\..\bin\Release\*.dll" -Destination "$env:Output_Dir" -Force
-        Copy-Item -Path "\..\bin\Release\*.config" -Destination "$env:Output_Dir" -Force
-        Copy-Item -Path "\..\bin\Release\*.pdb" -Destination "$env:Output_Dir" -Force
+        Copy-Item -Path "$env:Build_Output\*.exe" -Destination "$env:Output_Dir" -Force
+        Copy-Item -Path "$env:Build_Output\*.dll" -Destination "$env:Output_Dir" -Force
+        Copy-Item -Path "$env:Build_Output\*.config" -Destination "$env:Output_Dir" -Force
+        Copy-Item -Path "$env:Build_Output\*.pdb" -Destination "$env:Output_Dir" -Force
 
     - name: Create distribution package
       run: |
