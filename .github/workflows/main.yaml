@@ -11,7 +11,7 @@ jobs:
     runs-on: windows-latest
 
     env:
-        Solution_Name: xcom2-launcher/xcom2-launcher.csproj
+        Solution_Name: /.././xcom2-launcher.csproj
         Output_Dir: AML-Complete
     
     steps:
@@ -21,8 +21,8 @@ jobs:
     - name: Setup MSBuild
       uses: microsoft/setup-msbuild@v2
 
-    #- name: Restore NuGet packages
-    #  run: msbuild $env:Solution_Name /t:Restore /p:Configuration=Release
+    - name: Restore NuGet packages
+      run: msbuild $env:Solution_Name /t:Restore /p:Configuration=Release
 
     - name: Build application
       run: |
