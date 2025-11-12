@@ -32,10 +32,10 @@ jobs:
       run: |
         New-Item -ItemType Directory -Path "$env:Output_Dir" | Out-Null
 
-        Copy-Item -Path "bin\Release\*.exe" -Destination "$env:Output_Dir" -Force
-        Copy-Item -Path "bin\Release\*.dll" -Destination "$env:Output_Dir" -Force
-        Copy-Item -Path "bin\Release\*.config" -Destination "$env:Output_Dir" -Force
-        Copy-Item -Path "bin\Release\*.pdb" -Destination "$env:Output_Dir" -Force
+        Copy-Item -Path "\..\bin\Release\*.exe" -Destination "$env:Output_Dir" -Force
+        Copy-Item -Path "\..\bin\Release\*.dll" -Destination "$env:Output_Dir" -Force
+        Copy-Item -Path "\..\bin\Release\*.config" -Destination "$env:Output_Dir" -Force
+        Copy-Item -Path "\..\bin\Release\*.pdb" -Destination "$env:Output_Dir" -Force
 
     - name: Create distribution package
       run: |
