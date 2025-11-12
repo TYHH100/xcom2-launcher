@@ -18,11 +18,11 @@ jobs:
       uses: microsoft/setup-msbuild@v2
 
     - name: Restore NuGet packages
-      run: msbuild xcom2-launcher.csproj /t:Restore /p:Configuration=Release
+      run: msbuild xcom2-launcher/xcom2-launcher.csproj /t:Restore /p:Configuration=Release
 
     - name: Build application (not publish)
       run: |
-        msbuild xcom2-launcher.csproj `
+        msbuild xcom2-launcher/xcom2-launcher.csproj `
           /t:Build `
           /p:Configuration=Release `
           /p:Platform=AnyCPU `
