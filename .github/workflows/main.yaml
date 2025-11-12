@@ -11,7 +11,7 @@ jobs:
     runs-on: windows-latest
 
     env:
-        Solution_Name: /xcom2-launcher/xcom2-launcher/xcom2-launcher.csproj
+        Solution_Name: /xcom2-launcher/xcom2-launcher.sln
         Output_Dir: AML-Complete
     
     steps:
@@ -26,7 +26,7 @@ jobs:
 
     - name: Build application
       run: |
-        msbuild $env:Solution_Name /t:Build /p:Configuration=Release /p:OutputPath=bin\Release
+        msbuild $env:Solution_Name /t:Build /p:Configuration=Release /p:OutputPath=bin\Release /p:SkipGitVersion=true
 
     - name: Copy necessary files to output directory
       run: |
