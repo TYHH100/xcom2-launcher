@@ -2,9 +2,7 @@ name: XCOM2 Launcher MSBuild
 
 on:
   push:
-    branches: [ "actions-test" ]
-  release:
-    types: [published]
+    branches: [ "actions-test", "main" ]
 
 jobs:
   build:
@@ -17,6 +15,8 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v5
+      with:
+        fetch-depth: 0
 
     - name: Setup MSBuild
       uses: microsoft/setup-msbuild@v2
